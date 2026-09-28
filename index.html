@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-book by Ichsan Putra</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <!-- ============================================================ -->
+    <!-- META PIXEL SCRIPT (Ganti 'YOUR_PIXEL_ID' dengan ID Pixel Anda) -->
+    <!-- ============================================================ -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "YOUR_PIXEL_ID");
+      fbq("track", "PageView");
+    </script>
+    <!-- ============================================================ -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="aset/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Container Utama Landing Page -->
+    <div class="lp-wrapper">
+      <!-- List Potongan Gambar Landing Page (Sesuaikan nama file & path-nya) -->
+      <img src="aset/1.main header.webp" alt="Main Header" class="lp-image" />
+      <img
+        src="aset/Kisah Pribadi.webp"
+        alt="Pengalaman Pribadi"
+        class="lp-image pengalaman"
+      />
+      <!-- Vidio YT -->
+      <div class="video-section">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/oFZ_hT20JQk?rel=0&modestbranding=1"
+            title="YouTube Video Player"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Resiko -->
+      <img src="aset/2.R.webp" alt="Rsk" class="lp-image" />
+
+      <!-- Judul Deskripsi -->
+      <img src="aset/3.D1.webp" alt="Main Title Deskripsi" class="lp-image" />
+
+      <!-- ============ CAROUSEL ENGINE TRICK -->
+      <input
+        type="radio"
+        name="slider"
+        id="slide1"
+        class="slide-controller"
+        checked
+      />
+      <input type="radio" name="slider" id="slide2" class="slide-controller" />
+      <input type="radio" name="slider" id="slide3" class="slide-controller" />
+
+      <!-- AREA TAMPILAN GAMBAR STACK -->
+      <div class="carousel-view-area">
+        <!-- Card Gambar 1 (Utama) -->
+        <div id="card1" class="product-card">
+          <img
+            src="aset/Produk.webp"
+            alt="E-book Terapi dari Langit Utama"
+            width="420"
+            height="420"
+          />
+        </div>
+
+        <!-- Card Gambar 2 (Mengintip di Belakang 1) -->
+        <div id="card2" class="product-card">
+          <img
+            src="aset/produk 2.webp"
+            alt="Daftar isi E-book"
+            width="420"
+            height="420"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Card Gambar 3 (Mengintip di Belakang 2) -->
+        <div id="card3" class="product-card">
+          <img
+            src="aset/produk 3.webp"
+            alt="Bonus E-book"
+            width="420"
+            height="420"
+            loading="lazy"
+          />
+        </div>
+        <!-- TOMBOL NAVIGASI PANAH (KIRI & KANAN) -->
+        <!-- Panah yang muncul diatur otomatis via CSS tergantung slide mana yang aktif -->
+        <div class="carousel-nav-arrows">
+          <!-- Set Panah saat Slide 1 Aktif -->
+          <label for="slide3" class="arrow-btn prev-arrow arrow-s1"
+            >&#10094;</label
+          >
+          <label for="slide2" class="arrow-btn next-arrow arrow-s1"
+            >&#10095;</label
+          >
+
+          <!-- Set Panah saat Slide 2 Aktif -->
+          <label for="slide1" class="arrow-btn prev-arrow arrow-s2"
+            >&#10094;</label
+          >
+          <label for="slide3" class="arrow-btn next-arrow arrow-s2"
+            >&#10095;</label
+          >
+
+          <!-- Set Panah saat Slide 3 Aktif -->
+          <label for="slide2" class="arrow-btn prev-arrow arrow-s3"
+            >&#10094;</label
+          >
+          <label for="slide1" class="arrow-btn next-arrow arrow-s3"
+            >&#10095;</label
+          >
+        </div>
+      </div>
+
+      <!-- Indikator Titik Navigasi -->
+      <div class="carousel-dots">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+      <!-- ===END Carousel PRODUK !!!!! =======================-->
+
+      <!-- Deskripsi -->
+      <img src="aset/3.D2.webp" alt="Deskripsi1" class="lp-image" />
+      <img src="aset/3.D3.webp" alt="Deskripsi2" class="lp-image" />
+      <img src="aset/Bonus.webp" alt="Bonus" class="lp-image" />
+
+      <!-- ============ CUPLIKAN E-Book ============= -->
+
+      <section class="pdf-section-wrapper">
+        <!-- Teks Panduan Membaca untuk Calon Pembeli -->
+        <p class="pdf-instruction-text">
+          <span>📖</span> Geser atau scroll kotak di bawah untuk membaca
+          cuplikan E-book
+        </p>
+
+        <!-- Kotak Bingkai iFrame Menggunakan Link /preview Resmi -->
+        <div class="pdf-preview-container">
+          <iframe
+            src="https://drive.google.com/file/d/1KyYhgTKOqEtA8g2HpfbjD_fMWRM-XW6H/preview"
+            class="pdf-iframe-view"
+            title="Pratinjau E-book Terapi dari Langit"
+            allow="autoplay"
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Testimoni -->
+      <img src="aset/testi NEW 2.webp" alt="Tstmn" class="lp-image" />
+
+      <!-- CTA -->
+      <img src="aset/CTA.jpg" alt="cA" class="lp-image" />
+
+      <!-- ============= COUNTDOWN ============= -->
+      <section class="countdown-section">
+        <div class="countdown-container" id="CO">
+          <div class="countdown-wrapper">
+            <div class="countdown-card">
+              <span id="countdown-hours" class="countdown-number">02</span>
+              <span class="countdown-label">Jam</span>
+            </div>
+
+            <div class="countdown-divider">:</div>
+
+            <div class="countdown-card">
+              <span id="countdown-minutes" class="countdown-number">00</span>
+              <span class="countdown-label">Menit</span>
+            </div>
+
+            <div class="countdown-divider">:</div>
+
+            <div class="countdown-card">
+              <span id="countdown-seconds" class="countdown-number">00</span>
+              <span class="countdown-label">Detik</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============= P R O M O ============= -->
+      <section class="promo-price-section">
+        <div class="promo-price-container">
+          <h3 class="promo-announcement">
+            Harga <span class="badge-promo-pulse">PROMO</span> bisa berubah
+            sewaktu-waktu
+          </h3>
+
+          <div class="old-price-wrapper">
+            <span class="old-price-text"> Rp. 397.000 </span>
+            <div class="strike-line"></div>
+          </div>
+
+          <div class="new-price-text">Rp. 149.000</div>
+        </div>
+      </section>
+      <!-- ============= B U T T O N co ============= -->
+      <section class="cta-co-section">
+        <div class="cta-co-container">
+          <a
+            href="https://ichsanputra.myr.id/pl/terapi-dari-langit/"
+            class="btn-co-premium"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="tombol-co"
+          >
+            AMBIL AKSES E-BOOK SEKARANG!
+          </a>
+
+          <p class="btn-subtext-note">*klik untuk membeli E-Book</p>
+        </div>
+      </section>
+
+      <!-- ============== FAQ ============= -->
+      <section class="faq-section">
+        <div class="faq-container">
+          <h2 class="faq-main-title">Pertanyaan Sering Diajukan</h2>
+          <div class="faq-accordion-wrapper">
+            <details class="faq-item" name="faq-group">
+              <summary class="faq-question">
+                Berapa lama waktu yang dibutuhkan untuk pulih?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Pemulihan bersifat individual dan bergantung tingkat
+                  keparahannya, Penulis pribadi berhasil mencapai pemulihan
+                  optimal dalam kurun waktu 1 hingga 2 bulan. Namun, ada juga
+                  testimoni dari pembaca yang telah merasakan perbaikan
+                  signifikan hanya dalam 10 hari. Hasil akhir tetap bervariasi
+                  bagi setiap individu, namun konsistensi adalah kunci
+                  percepatan pemulihan Anda.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq-group">
+              <summary class="faq-question">
+                Saya hanya mampu sholat dengan duduk, apakah metode ini bisa
+                diterapkan?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Dulu penulis juga merasakan hal yang sama, hanya bisa duduk
+                  ketika sholat. Oleh karena itu dalam e-book ini juga diajarkan
+                  gerakan peregangan penunjang yang sangat mudah dan efektif
+                  berdasarkan pengalaman pribadi penulis, sehingga bisa
+                  mengurangi rasa sakit yang muncul ketika melakukan gerakan
+                  sholat.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq-group">
+              <summary class="faq-question">
+                Mengapa E-book ini berbayar?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Selama hampir 2 tahun, Penulis telah menghabiskan banyak
+                  waktu, biaya, dan tenaga untuk mencari serta menguji berbagai
+                  cara demi sembuh dari HNP. E-book ini adalah jawaban dari
+                  pencarian panjang tersebut. Investasi yang Anda berikan bukan
+                  sekadar biaya, melainkan bentuk kontribusi agar misi edukasi
+                  dan dakwah ini terus berkembang, sekaligus komitmen diri Anda
+                  untuk mempraktikkan metode ini secara konsisten sebagai kunci
+                  utama dalam meraih kembali kualitas hidup yang sehat.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item" name="faq-group">
+              <summary class="faq-question">
+                Bagaimana cara mendapatkan E-book ini?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Klik tombol
+                  <a href="#CO" class="move-co"
+                    >“AMBIL AKSES E-BOOK SEKARANG!”</a
+                  >, kemudian Anda akan diarahkan ke halaman checkout yang aman.
+                  Setelah pembayaran terkonfirmasi, file e-book langsung dikirim
+                  secara instan ke email Anda. <br /><span class="faq-last"
+                    >*pastikan alamat E-mail tidak salah.</span
+                  >
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <img src="aset/Footer.webp" alt="cA" class="lp-image" />
+    </div>
+  </body>
+</html>
